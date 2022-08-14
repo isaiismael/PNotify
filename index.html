@@ -1,59 +1,38 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-            <meta content="width=device-width, initial-scale=1.0" name="viewport">
-                <title>
-                    Document
-                </title>
-                <!-- Bootstrap -->
-                <link href="css/bootstrap.min.css" rel="stylesheet"/>
-                <!-- PNotify -->
-                <link href="css/pnotify.css" rel="stylesheet"/>
-                <link href="css/pnotify.buttons.css" rel="stylesheet"/>
-                <!-- Custom Theme Style -->
-                <link href="css/custom.min.css" rel="stylesheet"/>
-                <!-- SCRIPTS PARA NOTIFICACION -->
-                <!-- jQuery -->
-                <script src="js/jquery.min.js">
-                </script>
-                <!-- PNotify -->
-                <script src="js/pnotify.js">
-                </script>
-                <script src="js/pnotify.buttons.js">
-                </script>
-            </meta>
-        </meta>
-    </head>
-    <body style="background:white">
-        <script>
-            $(function notificacion(){
-            	new PNotify({
-            		title:"REGISTRADO",
-            		type:"success",
-            		text:"Usuario registrado correctamente",
-            		styling:"bootstrap3"
-            	});		
-	});
+<html lang="es">
 
-            $(function notificacion(){
-            	new PNotify({
-            		title:"IMPORTANTE",
-            		type:"warning",
-            		text:"Intentalo nuevamente",
-            		styling:"bootstrap3"
-            	});
-            });
+<head>
+   <!-- Bootstrap -->
+   <link href="css/bootstrap.min.css" rel="stylesheet" />
+   <!-- PNotify -->
+   <link href="css/pnotify.css" rel="stylesheet" />
+   <link href="css/pnotify.buttons.css" rel="stylesheet" />
+   <!-- Custom Theme Style -->
+   <link href="css/custom.min.css" rel="stylesheet" />
+   <!-- SCRIPTS PARA NOTIFICACION -->
+   <!-- jQuery -->
+   <script src="js/jquery.min.js">
+   </script>
+   <!-- PNotify -->
+   <script src="js/pnotify.js">
+   </script>
+   <script src="js/pnotify.buttons.js">
+   </script>
+   </meta>
+   </meta>
+</head>
 
+<body style="background:white">
+   <script>
+      //success - error- warning - info
+      $(function notificacion() {
+         new PNotify({
+            title: "REGISTRADO",
+            type: "success",
+            text: "Usuario registrado correctamente",
+            styling: "bootstrap3"
+         });
+      });
+   </script>
+</body>
 
-            $(function notificacion(){
-            	new PNotify({
-            		title:"ERROR",
-            		type:"error",
-            		text:"Error al registrar usuario",
-            		styling:"bootstrap3"
-            	})
-            })
-        </script>
-    </body>
 </html>
